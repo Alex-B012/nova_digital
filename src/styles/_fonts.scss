@@ -1,0 +1,49 @@
+@font-face {
+  font-family: "Roboto-Medium";
+  font-weight: 500;
+  font-style: normal;
+  src: url("../assets/fonts/Roboto-Medium.woff2") format("woff2"),
+    url("../assets/fonts/Roboto-Medium.woff") format("woff"),
+    url("../assets/fonts/Roboto-Medium.ttf") format("truetype"),
+    url("../assets/fonts/Roboto-Medium.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "RobotoCondensed-Bold";
+  font-weight: 700;
+  font-style: normal;
+  src: url("../assets/fonts/RobotoCondensed-Bold.woff2") format("woff2"),
+    url("../assets/fonts/RobotoCondensed-Bold.woff") format("woff"),
+    url("../assets/fonts/RobotoCondensed-Bold.ttf") format("truetype"),
+    url("../assets/fonts/RobotoCondensed-Bold.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "RobotoCondensed-Regular";
+  font-weight: 400;
+  font-style: normal;
+  src: url("../assets/fonts/RobotoCondensed-Regular.woff2") format("woff2"),
+    url("../assets/fonts/RobotoCondensed-Regular.woff") format("woff"),
+    url("../assets/fonts/RobotoCondensed-Regular.ttf") format("truetype"),
+    url("../assets/fonts/RobotoCondensed-Regular.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Dosis-Medium";
+  font-weight: 500;
+  font-style: normal;
+  src: url("../assets/fonts/Dosis-Medium.woff2") format("woff2"),
+    url("../assets/fonts/Dosis-Medium.woff") format("woff"),
+    url("../assets/fonts/Dosis-Medium.ttf") format("truetype"),
+    url("../assets/fonts/Dosis-Medium.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Dosis-Light";
+  font-weight: 300;
+  font-style: normal;
+  src: url("../assets/fonts/Dosis-Light.woff2") format("woff2"),
+    url("../assets/fonts/Dosis-Light.woff") format("woff"),
+    url("../assets/fonts/Dosis-Light.ttf") format("truetype"),
+    url("../assets/fonts/Dosis-Light.otf") format("opentype");
+}

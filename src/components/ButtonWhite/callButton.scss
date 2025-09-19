@@ -1,0 +1,24 @@
+@import "../../styles/main.scss";
+
+.call__btn {
+  max-height: 35px;
+  max-width: 200px;
+  padding: 7px 40px;
+  background-color: $bg-color;
+  color: $accent;
+  font-weight: 700;
+  letter-spacing: 1px;
+  border: none;
+  border-radius: 3px;
+  text-transform: uppercase;
+
+  &:hover {
+    @extend %btn-hover;
+  }
+}
+
+@media (min-width: 1024px) {
+  .call__btn {
+    padding: 7px 60px;
+  }
+}

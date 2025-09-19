@@ -1,0 +1,43 @@
+$accent: rgb(43, 64, 116);
+$accent-hover: #253764;
+$white-hover: #d8d8d8;
+$bg-color: #f9f6e5;
+$menu__btn-bg: white;
+$text-color: #4a4a4a;
+$text-color-lightgray: #797979;
+$default-color: #9b9b9b;
+
+$head-height320: 193px;
+$services__item-width: 240px;
+
+$footer-text-color: white;
+
+%btn-hover {
+  cursor: pointer;
+  box-shadow: 3px 3px 5px 1px rgba(29, 29, 29, 0.8);
+}
+
+%dosis-300 {
+  font-family: "Dosis-Light";
+  font-weight: 300;
+}
+
+%dosis-500 {
+  font-family: "Dosis-Medium";
+  font-weight: 500;
+}
+
+%roboto-500 {
+  font-family: "Roboto-Medium";
+  font-weight: 500;
+}
+
+%robotocondensed-400 {
+  font-family: "RobotoCondensed-Regular";
+  font-weight: 400;
+}
+
+%robotocondensed-700 {
+  font-family: "RobotoCondensed-Bold";
+  font-weight: 700;
+}

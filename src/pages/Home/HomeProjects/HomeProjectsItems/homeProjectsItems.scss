@@ -1,0 +1,28 @@
+.projects__items {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (min-width: 640px) {
+  .projects__items {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+}
+
+@media (min-width: 768px) {
+  .projects__items {
+    max-width: 850px;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+@media (min-width: 1440px) {
+  .projects__items {
+    max-width: 100%;
+  }
+}

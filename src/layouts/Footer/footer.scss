@@ -1,0 +1,87 @@
+@use "../../styles/variables" as vars;
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  font-family: "Roboto-Medium";
+  padding: 40px 0 15px;
+  background-color: vars.$accent;
+  color: vars.$footer-text-color;
+
+  &__promotext {
+    width: 90%;
+    margin-bottom: 10px;
+    &-item:first-child {
+      margin-bottom: 10px;
+    }
+  }
+
+  &__bottom {
+    width: 90%;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    gap: 15px;
+    padding: 20px 0;
+    &-item {
+      width: 100%;
+      min-width: 140px;
+      max-width: 140px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      font-size: 0.8rem;
+    }
+
+    &-title {
+      text-transform: uppercase;
+      font-size: 0.9rem;
+      margin-bottom: 5px;
+    }
+    &-address-items {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    &-address-item {
+      display: flex;
+      flex-basis: auto;
+    }
+
+    &-link:hover {
+      color: vars.$white-hover;
+    }
+  }
+
+  &__text {
+    line-height: 20px;
+    font-size: 0.8rem;
+  }
+}
+
+@media (min-width: 450px) {
+  .footer__bottom {
+    width: 45%;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 640px) {
+  .footer__promotext {
+    width: 80%;
+  }
+}
+
+@media (min-width: 700px) {
+  .footer__bottom {
+    width: 20%;
+    grid-template-columns: 1fr 1fr 0.9fr 0.8fr;
+  }
+}
+
+@media (min-width: 1024px) {
+  .footer__promotext {
+    width: 70%;
+  }
+}

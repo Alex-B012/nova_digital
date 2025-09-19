@@ -1,0 +1,36 @@
+@import "../../../../styles/variables";
+
+.homeQuote__item {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  margin: 0 auto;
+  &-text {
+    max-width: 500px;
+    font-size: 18px;
+    font-style: italic;
+    line-height: 1.5;
+    margin: 0 auto;
+    color: $text-color;
+  }
+  &-author {
+    text-align: center;
+    max-width: 200px;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0 auto;
+    margin-top: 50px;
+    color: $accent;
+  }
+}
+
+@media (min-width: 640px) {
+  .homeQuote__item {
+    &-text {
+      max-width: 530px;
+    }
+  }
+}

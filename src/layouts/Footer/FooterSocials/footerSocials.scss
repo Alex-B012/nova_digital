@@ -1,0 +1,51 @@
+@import "../../../styles/variables";
+
+.footer__socials {
+  width: 90%;
+  margin: 0 auto;
+  padding: 20px 0;
+  display: flex;
+  &-item {
+    height: 30px;
+    width: 100%;
+    border: 2px solid white;
+    border-left-color: transparent;
+    padding: 5px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &:last-child {
+      border-right-color: transparent;
+    }
+    &:hover {
+      .footer__socials-icon {
+        color: $white-hover;
+      }
+    }
+  }
+
+  &-icon {
+    width: 15px;
+    height: 15px;
+  }
+}
+
+@media (min-width: 640px) {
+  .footer__socials {
+    width: 70%;
+    &-item {
+      padding: 20px 0;
+    }
+
+    &-icon {
+      width: 17px;
+      height: 17px;
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  .footer__socials {
+    width: 60%;
+  }
+}

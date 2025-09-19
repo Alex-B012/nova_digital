@@ -1,0 +1,51 @@
+@use "../../styles/main.scss" as main;
+
+.header {
+  background-color: main.$accent;
+  &__inner {
+    min-height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.menu__btn {
+  width: 40px;
+  height: 40px;
+  border-radius: 3px;
+  border: none;
+  background-color: main.$menu__btn-bg;
+  margin-right: 10px;
+  position: relative;
+
+  &::after {
+    content: "";
+    width: 12px;
+    height: 2px;
+    border-radius: 1px;
+    background-color: main.$accent;
+    position: absolute;
+    top: 15px;
+    left: 14px;
+    box-shadow: 0 4px 0 0 main.$accent, 0 8px 0 0 main.$accent;
+  }
+}
+
+.menu__btn:hover {
+  @extend %btn-hover;
+}
+
+@media (min-width: 640px) {
+  .header {
+    &__inner {
+      min-height: 100px;
+    }
+  }
+}
+
+@media (min-width: 1440px) {
+  .menu__btn {
+    margin-right: 90px;
+  }
+}

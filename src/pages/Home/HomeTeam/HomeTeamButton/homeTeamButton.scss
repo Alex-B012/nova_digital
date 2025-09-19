@@ -1,0 +1,28 @@
+@import "../../../../styles/main.scss";
+
+.team__btn {
+  max-width: 165px;
+  max-height: 45px;
+  padding: 15px 26px;
+  border: none;
+  border-radius: 3px;
+  color: $bg-color;
+  background-color: $accent;
+  text-transform: uppercase;
+  &:hover {
+    @extend %btn-hover;
+  }
+}
+
+@media (min-width: 768px) {
+  .team__btn {
+    grid-area: teamBtn;
+    margin: 20px auto 0;
+  }
+}
+
+@media (min-width: 1024px) {
+  .team__btn {
+    margin: 0;
+  }
+}

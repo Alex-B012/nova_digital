@@ -1,0 +1,55 @@
+@import "../../../styles/main.scss";
+
+.call {
+  padding: 40px 0;
+  background-color: $accent;
+  color: white;
+  text-align: center;
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__title {
+    @extend %roboto-500;
+    font-size: 24px;
+    line-height: 26px;
+    margin-bottom: 20px;
+  }
+  &__text {
+    @extend %dosis-300;
+    margin-bottom: 40px;
+  }
+}
+
+@media (min-width: 768px) {
+  .call {
+    text-align: left;
+    &__inner {
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+    &__text {
+      margin-bottom: 0;
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  .call {
+    &__btn {
+      padding: 7px 60px;
+    }
+  }
+}
+
+@media (min-width: 1440px) {
+  .call {
+    &__inner {
+      padding: 0 80px;
+    }
+  }
+}

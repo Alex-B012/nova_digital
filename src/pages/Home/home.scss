@@ -1,0 +1,6 @@
+@use "../../styles/variables" as vars;
+
+.homePage {
+  background-color: vars.$bg-color;
+  padding: 0 0 90px;
+}
